@@ -1,6 +1,6 @@
 const User = require("../models/user");
 
-// ================= SIGNUP =================
+
 const signup = async (req, res) => {
   try {
     const { username, email, password, role } = req.body;
@@ -17,7 +17,7 @@ const signup = async (req, res) => {
     const newUser = new User({
       username,
       email,
-      password, // bcrypt later
+      password, 
       role: role || "user",
     });
 
@@ -30,7 +30,7 @@ const signup = async (req, res) => {
   }
 };
 
-// ================= LOGIN =================
+
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
