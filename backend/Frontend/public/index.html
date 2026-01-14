@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eccomerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+        <p>Login/Signup</p>
+    </div>
+    <div class="buttons">
+        <button class="loginBtn">Login</button>
+     <button class="signupBtn">Signup</button>
+    </div>
+
+    <div id="form" >
+           <div class="signup-form" >
+            <h2 class="hed">Signup</h2>
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" placeholder=" Entre your  Username" required><br>
+            <label for="signup-email">   Email:    </label>
+            <input type="email" id="signup-email" placeholder=" Entre your Email" required><br>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" placeholder=" Entre your Password" required><br>
+            <input type="checkbox" id="check">
+            <button id="signup-submit">Submit</button>
+    </div>
+    
+        <div class="login-form" >
+            <h2 class="hed">Login</h2>
+            <label for="login-email">Email :</label>
+            <input type="text" id="login-email" placeholder=" Entre your Email" required><br>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder=" Entre your Password" required><br>
+            <button id="login-submit">Submit</button>
+        </div>
+        
+     
+    </div>
+    <script>
+        window.onload = function() {
+  const inputs = document.querySelectorAll('input');
+  inputs.forEach(input => input.value = '');
+};
+    </script>
+ <script src="script.js"></script>
+</body>
+
+</html>

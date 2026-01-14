@@ -9,14 +9,12 @@
         background-color: rgb(69, 156, 255);
         padding-left: 10px;
         padding: 10px;
-        color: white;
 }
 #form-div{
     margin: 25px;
     align-items: center;
     justify-content: center;
     display: flex;
-    color: rgb(26, 27, 27);
 }
 #form-div label{
     font-size: 18px;

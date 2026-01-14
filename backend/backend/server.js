@@ -5,9 +5,6 @@ const path = require("path");
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/auth.routes");
 const productRoutes = require("./routes/product.routes");
-const prodRoutes = require("./routes/prod.routes"); // USER
-const cartRoutes = require("./routes/cart.routes");
-
 
 const app = express();
 const PORT = 7000;
@@ -21,8 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "../Frontend/public")));
 
 app.use("/", authRoutes);
-app.use("/api", prodRoutes);
-app.use("/api/user/cart", cartRoutes);
+
 app.use("/", productRoutes);
 
 app.listen(PORT, () => {
